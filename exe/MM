@@ -2,4 +2,3 @@
 
 require "MomentMethod"
 
-MomentMethod::Command.run(ARGV)

@@ -1,0 +1,13 @@
+require "MomentMethod/version"
+require "MomentMethod/moment.rb"
+require "optparse"
+
+
+module MomentMethod
+  # Your code goes here...
+
+end
+
+
+=begin
+=end
