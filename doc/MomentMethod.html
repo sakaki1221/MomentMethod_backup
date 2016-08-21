@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>
-  Module: MomentMethod
+  Class: MomentMethod
   
     &mdash; Documentation by YARD 0.8.7.6
   
@@ -63,7 +63,7 @@
 
     <iframe id="search_frame"></iframe>
 
-    <div id="content"><h1>Module: MomentMethod
+    <div id="content"><h1>Class: MomentMethod
   
   
   
@@ -71,6 +71,21 @@
 
 <dl class="box">
   
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">MomentMethod</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
   
     
   
@@ -78,23 +93,51 @@
   
   
   
-    <dt class="r1 last">Defined in:</dt>
-    <dd class="r1 last">lib/MomentMethod.rb<span class="defines">,<br />
-  lib/MomentMethod/version.rb</span>
-</dd>
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/MomentMethod/moment_method.rb</dd>
   
 </dl>
 <div class="clear"></div>
 
+<div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="MomentPlot.html" title="MomentPlot (class)">MomentPlot</a></span></p>
+</div>
 
   <h2>Constant Summary</h2>
   
     <dl class="constants">
       
-        <dt id="VERSION-constant" class="">VERSION =
+        <dt id="BOLTZ-constant" class="">BOLTZ =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>元の定数違う，多分間違い  BOLTZ = 1.380658e-16</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='float'>1.38064852e-16</span></pre></dd>
+      
+        <dt id="PLANCK-constant" class="">PLANCK =
           
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>0.1.0</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='float'>6.626e-27</span></pre></dd>
+      
+        <dt id="HBAR-constant" class="">HBAR =
+          
+        </dt>
+        <dd><pre class="code"><span class='const'>PLANCK</span><span class='op'>/</span><span class='lparen'>(</span><span class='float'>2.0</span><span class='op'>*</span><span class='const'>PI</span><span class='rparen'>)</span></pre></dd>
+      
+        <dt id="AVOGADO-constant" class="">AVOGADO =
+          
+        </dt>
+        <dd><pre class="code"><span class='float'>6.023e23</span></pre></dd>
       
     </dl>
   
@@ -105,12 +148,1289 @@
 
 
 
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
 
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_a0-instance_method" title="#calc_a0 (instance method)">- (Object) <strong>calc_a0</strong>(m, n, r0) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_gamma-instance_method" title="#calc_gamma (instance method)">- (Object) <strong>calc_gamma</strong>(a1, a2, structure) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_k-instance_method" title="#calc_k (instance method)">- (Object) <strong>calc_k</strong>(a1, a2, structure) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_large_a-instance_method" title="#calc_large_a (instance method)">- (Object) <strong>calc_large_a</strong>(x, gt_k2) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_moment-instance_method" title="#calc_moment (instance method)">- (Object) <strong>calc_moment</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_moment_vasp-instance_method" title="#calc_moment_vasp (instance method)">- (Object) <strong>calc_moment_vasp</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_psi0-instance_method" title="#calc_psi0 (instance method)">- (Object) <strong>calc_psi0</strong>(x, theta) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_psi_linear-instance_method" title="#calc_psi_linear (instance method)">- (Object) <strong>calc_psi_linear</strong>(k, x, gamma, theta) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>追加で実装　論文(1988)p515.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_psi_nonli-instance_method" title="#calc_psi_nonli (instance method)">- (Object) <strong>calc_psi_nonli</strong>(k, x, gamma, theta) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_u0-instance_method" title="#calc_u0 (instance method)">- (Object) <strong>calc_u0</strong>(a1, a2) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calc_y0-instance_method" title="#calc_y0 (instance method)">- (Object) <strong>calc_y0</strong>(k, gamma, theta, large_a) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#check-instance_method" title="#check (instance method)">- (Object) <strong>check</strong>(*val) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ev_from_erg-instance_method" title="#ev_from_erg (instance method)">- (Object) <strong>ev_from_erg</strong>(a) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ev_from_kelvin-instance_method" title="#ev_from_kelvin (instance method)">- (Object) <strong>ev_from_kelvin</strong>(a) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (MomentMethod) <strong>initialize</strong>(structure) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of MomentMethod.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#select-instance_method" title="#select (instance method)">- (Object) <strong>select</strong>(file = &#39;POTCAR&#39;) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="MomentMethod (class)">MomentMethod</a></span></tt>) <strong>initialize</strong>(structure) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of MomentMethod</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14
+15
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 12</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_structure'>structure</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Hi,moment</span><span class='tstring_end'>&quot;</span></span>
+  <span class='ivar'>@structure</span><span class='op'>=</span><span class='id identifier rubyid_structure'>structure</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>structure = </span><span class='embexpr_beg'>#{</span><span class='ivar'>@structure</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_select'>select</span>
+  <span class='ivar'>@structure</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>vasp</span><span class='tstring_end'>&quot;</span></span> <span class='op'>?</span> <span class='id identifier rubyid_calc_moment_vasp'>calc_moment_vasp</span> <span class='op'>:</span> <span class='id identifier rubyid_calc_moment'>calc_moment</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="calc_a0-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_a0</strong>(m, n, r0) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+163
+164
+165
+166
+167</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 163</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_a0'>calc_a0</span><span class='lparen'>(</span><span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='id identifier rubyid_n'>n</span><span class='comma'>,</span> <span class='id identifier rubyid_r0'>r0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_an'>an</span><span class='op'>=</span><span class='float'>12.0</span> <span class='op'>+</span> <span class='float'>6.0</span><span class='op'>/</span><span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span><span class='op'>**</span><span class='id identifier rubyid_m'>m</span>
+  <span class='id identifier rubyid_am'>am</span><span class='op'>=</span><span class='float'>12.0</span> <span class='op'>+</span> <span class='float'>6.0</span><span class='op'>/</span><span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span><span class='op'>**</span><span class='id identifier rubyid_n'>n</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span> <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='id identifier rubyid_r0'>r0</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='id identifier rubyid_an'>an</span><span class='op'>/</span><span class='id identifier rubyid_am'>am</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_m'>m</span><span class='op'>-</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span> <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_gamma-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_gamma</strong>(a1, a2, structure) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 184</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_gamma'>calc_gamma</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='comma'>,</span><span class='id identifier rubyid_a2'>a2</span><span class='comma'>,</span><span class='id identifier rubyid_structure'>structure</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_structure'>structure</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>jindofcc</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_diff_u4_a1'>diff_u4_a1</span> <span class='op'>=</span> <span class='float'>2.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de4dr4'>de4dr4</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>12.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de3dr3'>de3dr3</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_a1'>a1</span> <span class='op'>-</span> <span class='float'>42.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>42.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_diff_u4_a2'>diff_u4_a2</span> <span class='op'>=</span> <span class='float'>2.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de4dr4'>de4dr4</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>12.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span> <span class='op'>-</span> <span class='float'>12.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_diff_x2y2_a1'>diff_x2y2_a1</span> <span class='op'>=</span> <span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de4dr4'>de4dr4</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>2.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de3dr3'>de3dr3</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_a1'>a1</span> <span class='op'>-</span> <span class='float'>8.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>8.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_diff_x2y2_a2'>diff_x2y2_a2</span> <span class='op'>=</span> <span class='float'>4.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de3dr3'>de3dr3</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_a2'>a2</span> <span class='op'>-</span> <span class='float'>11.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>11.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sakakifcc</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_diff_u4_a1'>diff_u4_a1</span> <span class='op'>=</span> <span class='float'>2.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de4dr4'>de4dr4</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>12.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de3dr3'>de3dr3</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_a1'>a1</span> <span class='op'>-</span> <span class='float'>6.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>6.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_diff_u4_a2'>diff_u4_a2</span> <span class='op'>=</span> <span class='float'>2.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de4dr4'>de4dr4</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>12.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span> <span class='op'>-</span> <span class='float'>12.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_diff_x2y2_a1'>diff_x2y2_a1</span> <span class='op'>=</span> <span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de4dr4'>de4dr4</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>2.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de3dr3'>de3dr3</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_a1'>a1</span> <span class='op'>+</span> <span class='float'>3.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>-</span> <span class='float'>3.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_diff_x2y2_a2'>diff_x2y2_a2</span> <span class='op'>=</span> <span class='float'>4.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de3dr3'>de3dr3</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_a2'>a2</span> <span class='op'>-</span> <span class='float'>6.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>6.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='op'>*</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fitting_test</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>return</span> <span class='lparen'>(</span><span class='float'>4.629669951e23</span><span class='op'>-</span><span class='float'>1.411654254e31</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='float'>6.0</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>vasp</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_a1'>a1</span><span class='op'>=</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='float'>1e10</span>
+    <span class='kw'>return</span> <span class='lparen'>(</span><span class='op'>-</span><span class='float'>1089.896157</span><span class='op'>+</span><span class='float'>529.2267532</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='float'>6.0</span><span class='op'>*</span><span class='float'>1.60218e-12</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>*******************missed structure**********************</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_exit'>exit</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='ivar'>@gamma1</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='float'>1.0</span><span class='op'>/</span><span class='int'>48</span><span class='rparen'>)</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_diff_u4_a1'>diff_u4_a1</span> <span class='op'>+</span> <span class='id identifier rubyid_diff_u4_a2'>diff_u4_a2</span><span class='rparen'>)</span><span class='op'>*</span><span class='const'>BOLTZ</span>
+  <span class='ivar'>@gamma2</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='float'>6.0</span><span class='op'>/</span><span class='int'>48</span><span class='rparen'>)</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_diff_x2y2_a1'>diff_x2y2_a1</span> <span class='op'>+</span> <span class='id identifier rubyid_diff_x2y2_a2'>diff_x2y2_a2</span><span class='rparen'>)</span><span class='op'>*</span><span class='const'>BOLTZ</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_gamma'>gamma</span> <span class='op'>=</span> <span class='float'>4.0</span><span class='op'>*</span><span class='lparen'>(</span><span class='ivar'>@gamma1</span><span class='op'>+</span><span class='ivar'>@gamma2</span><span class='rparen'>)</span><span class='comment'>#p516(18)
+</span>  <span class='comment'>#return 4*@gamma1
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_k-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_k</strong>(a1, a2, structure) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 169</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_k'>calc_k</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='comma'>,</span><span class='id identifier rubyid_a2'>a2</span><span class='comma'>,</span><span class='id identifier rubyid_structure'>structure</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_structure'>structure</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fitting_test</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_k'>k</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='float'>5.692097474e6</span><span class='op'>-</span><span class='float'>2.141523420e14</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>+</span><span class='float'>5.413711083e22</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>-</span><span class='float'>2.512603723e-8</span><span class='rparen'>)</span><span class='op'>**</span><span class='int'>2</span><span class='op'>-</span><span class='float'>2.352757090e30</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>-</span><span class='float'>2.512603723e-8</span><span class='rparen'>)</span><span class='op'>**</span><span class='int'>3</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>vasp</span><span class='tstring_end'>&quot;</span></span>
+    <span class='comment'>#0番目のポテンシャルのみだから1/2倍しないでいい．とりあえずevからergに変換しとく
+</span>    <span class='id identifier rubyid_a1'>a1</span><span class='op'>=</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='float'>1e10</span>
+    <span class='id identifier rubyid_k'>k</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='float'>192.3313091</span><span class='op'>-</span><span class='float'>69.33663132</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>+</span><span class='float'>135.4613676</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>-</span><span class='float'>2.5713342796904244</span><span class='rparen'>)</span><span class='op'>**</span><span class='int'>2</span><span class='op'>+</span><span class='float'>88.20445888</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>-</span><span class='float'>2.5713342796904244</span><span class='rparen'>)</span><span class='op'>**</span><span class='int'>3</span><span class='rparen'>)</span><span class='op'>*</span><span class='float'>1.60218e-12</span>
+  <span class='kw'>else</span>
+  <span class='id identifier rubyid_k'>k</span> <span class='op'>=</span> <span class='float'>2.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>4.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_a1'>a1</span> <span class='op'>+</span> <span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_de2dr2'>de2dr2</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='float'>2.0</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_dedr'>dedr</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_a2'>a2</span><span class='semicolon'>;</span>
+  <span class='id identifier rubyid_k'>k</span> <span class='op'>=</span><span class='id identifier rubyid_k'>k</span><span class='op'>*</span><span class='const'>BOLTZ</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_k'>k</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_large_a-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_large_a</strong>(x, gt_k2) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 223</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_large_a'>calc_large_a</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_gt_k2'>gt_k2</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_xcothx'>xcothx</span> <span class='op'>=</span> <span class='id identifier rubyid_x'>x</span><span class='op'>/</span><span class='id identifier rubyid_tanh'>tanh</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_xcothx'>xcothx</span> <span class='op'>=</span> <span class='id identifier rubyid_x'>x</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span><span class='op'>+</span><span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span><span class='op'>-</span><span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span><span class='op'>-</span><span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span><span class='op'>-</span><span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_xcothx2'>xcothx2</span> <span class='op'>=</span> <span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>**</span><span class='int'>2</span>
+  <span class='id identifier rubyid_xcothx3'>xcothx3</span> <span class='op'>=</span> <span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>**</span><span class='int'>3</span>
+  <span class='id identifier rubyid_xcothx4'>xcothx4</span> <span class='op'>=</span> <span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>**</span><span class='int'>4</span>
+  <span class='id identifier rubyid_xcothx5'>xcothx5</span> <span class='op'>=</span> <span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>**</span><span class='int'>5</span>
+  <span class='id identifier rubyid_small_a1'>small_a1</span> <span class='op'>=</span> <span class='float'>1.0</span> <span class='op'>+</span> <span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>/</span><span class='float'>2.0</span>
+  <span class='id identifier rubyid_small_a2'>small_a2</span> <span class='op'>=</span> <span class='float'>13.0</span><span class='op'>/</span><span class='float'>3.0</span> <span class='op'>+</span> <span class='float'>47.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>/</span><span class='float'>6.0</span> <span class='op'>+</span> <span class='float'>23.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx2'>xcothx2</span><span class='op'>/</span><span class='float'>6.0</span> <span class='op'>+</span> <span class='id identifier rubyid_xcothx3'>xcothx3</span><span class='op'>/</span><span class='float'>2.0</span>
+  <span class='id identifier rubyid_small_a3'>small_a3</span> <span class='op'>=</span> <span class='op'>-</span><span class='lparen'>(</span><span class='float'>25.0</span><span class='op'>/</span><span class='float'>3.0</span> <span class='op'>+</span> <span class='float'>121.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>/</span><span class='float'>6.0</span> <span class='op'>+</span> <span class='float'>50.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx2'>xcothx2</span><span class='op'>/</span><span class='float'>3.0</span> <span class='op'>+</span> <span class='float'>16.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx3'>xcothx3</span><span class='op'>/</span><span class='float'>3.0</span> <span class='op'>+</span> <span class='id identifier rubyid_xcothx4'>xcothx4</span><span class='op'>/</span><span class='float'>2.0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_small_a4'>small_a4</span> <span class='op'>=</span> <span class='float'>43.0</span><span class='op'>/</span><span class='float'>3.0</span> <span class='op'>+</span> <span class='float'>93.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>/</span><span class='float'>2.0</span> <span class='op'>+</span> <span class='float'>169.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx2'>xcothx2</span><span class='op'>/</span><span class='float'>3.0</span> <span class='op'>+</span> <span class='float'>83.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx3'>xcothx3</span><span class='op'>/</span><span class='float'>3.0</span> <span class='op'>+</span> <span class='float'>22.0</span><span class='op'>*</span><span class='id identifier rubyid_xcothx4'>xcothx4</span><span class='op'>/</span><span class='float'>3.0</span> <span class='op'>+</span> <span class='id identifier rubyid_xcothx5'>xcothx5</span><span class='op'>/</span><span class='float'>2.0</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_large_a'>large_a</span> <span class='op'>=</span> <span class='id identifier rubyid_small_a1'>small_a1</span> <span class='op'>+</span> <span class='id identifier rubyid_small_a2'>small_a2</span><span class='op'>*</span><span class='id identifier rubyid_gt_k2'>gt_k2</span><span class='op'>**</span><span class='int'>2</span> <span class='op'>+</span> <span class='id identifier rubyid_small_a3'>small_a3</span><span class='op'>*</span><span class='id identifier rubyid_gt_k2'>gt_k2</span><span class='op'>**</span><span class='int'>3</span> <span class='op'>+</span> <span class='id identifier rubyid_small_a4'>small_a4</span><span class='op'>*</span><span class='id identifier rubyid_gt_k2'>gt_k2</span><span class='op'>**</span><span class='int'>4</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_moment-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_moment</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_moment'>calc_moment</span>
+  <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>start calc_moment</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_a0'>a0</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_a0'>calc_a0</span><span class='lparen'>(</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_m'>m</span><span class='comma'>,</span> <span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='comma'>,</span> <span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_r0'>r0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>a0=</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='id identifier rubyid_a0'>a0</span><span class='rparen'>)</span>
+  <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='int'>1</span><span class='op'>..</span><span class='int'>10</span>
+    <span class='id identifier rubyid_temp'>temp</span> <span class='op'>=</span> <span class='int'>100</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_i'>i</span><span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_temp'>temp</span> <span class='op'>=</span> <span class='int'>10</span> <span class='kw'>if</span> <span class='id identifier rubyid_i'>i</span><span class='op'>==</span><span class='int'>1</span>
+    <span class='id identifier rubyid_p'>p</span> <span class='id identifier rubyid_theta'>theta</span> <span class='op'>=</span> <span class='const'>BOLTZ</span><span class='op'>*</span><span class='id identifier rubyid_temp'>temp</span>
+    <span class='id identifier rubyid_gap'>gap</span> <span class='op'>=</span> <span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='int'>6</span><span class='rparen'>)</span><span class='lbrace'>{</span> <span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='int'>201</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+    <span class='id identifier rubyid_aa1'>aa1</span><span class='comma'>,</span><span class='id identifier rubyid_aa2'>aa2</span><span class='op'>=</span><span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span><span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='op'>=</span><span class='id identifier rubyid_a0'>a0</span>
+    <span class='id identifier rubyid_comp_gap'>comp_gap</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='kw'>for</span> <span class='id identifier rubyid_change'>change</span> <span class='kw'>in</span> <span class='int'>1</span><span class='op'>..</span><span class='int'>5</span> <span class='comment'>#width to displace
+</span>      <span class='kw'>for</span> <span class='id identifier rubyid_same'>same</span> <span class='kw'>in</span> <span class='int'>1</span><span class='op'>..</span><span class='int'>200</span>
+        <span class='id identifier rubyid_gap'>gap</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_same'>same</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_same'>same</span><span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span><span class='op'>*</span><span class='lparen'>(</span><span class='int'>10</span><span class='op'>**</span><span class='lparen'>(</span><span class='op'>-</span><span class='lparen'>(</span><span class='int'>9</span><span class='op'>+</span><span class='id identifier rubyid_change'>change</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='comment'>#start 1e-10
+</span>        <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>+</span> <span class='id identifier rubyid_gap'>gap</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_same'>same</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_aa2'>aa2</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='op'>*</span><span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_a1'>a1</span><span class='comma'>,</span> <span class='id identifier rubyid_a2'>a2</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_aa2'>aa2</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_k'>k</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_k'>calc_k</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='comma'>,</span><span class='id identifier rubyid_a2'>a2</span><span class='comma'>,</span><span class='ivar'>@structure</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_atom_mass'>atom_mass</span> <span class='op'>=</span> <span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_atom_mass'>atom_mass</span><span class='op'>/</span><span class='const'>AVOGADO</span>
+        <span class='id identifier rubyid_omega'>omega</span> <span class='op'>=</span> <span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='op'>/</span><span class='id identifier rubyid_atom_mass'>atom_mass</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='const'>HBAR</span><span class='op'>*</span><span class='id identifier rubyid_omega'>omega</span><span class='op'>/</span><span class='lparen'>(</span><span class='float'>2.0</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_gamma'>gamma</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_gamma'>calc_gamma</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='comma'>,</span><span class='id identifier rubyid_a2'>a2</span><span class='comma'>,</span><span class='ivar'>@structure</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_gt_k2'>gt_k2</span> <span class='op'>=</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='op'>/</span><span class='id identifier rubyid_k'>k</span><span class='op'>**</span><span class='int'>2</span>
+        <span class='id identifier rubyid_u0'>u0</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_u0'>calc_u0</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='comma'>,</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_psi0'>psi0</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_psi0'>calc_psi0</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_large_a'>large_a</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_large_a'>calc_large_a</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_gt_k2'>gt_k2</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_y0'>y0</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_y0'>calc_y0</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span> <span class='id identifier rubyid_theta'>theta</span><span class='comma'>,</span> <span class='id identifier rubyid_large_a'>large_a</span><span class='rparen'>)</span>
+        <span class='kw'>case</span> <span class='ivar'>@structure</span>
+        <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fitting_test</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>vasp</span><span class='tstring_end'>&quot;</span></span>
+          <span class='id identifier rubyid_psi_nonli'>psi_nonli</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_psi_linear'>calc_psi_linear</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span> <span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span><span class='comment'>#とりあえず変数はそのままnonli
+</span>        <span class='kw'>else</span>
+          <span class='id identifier rubyid_psi_nonli'>psi_nonli</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_psi_nonli'>calc_psi_nonli</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span><span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span> <span class='comment'>#nonlinear fcc thesis(1988)p516(19)
+</span>        <span class='kw'>end</span>
+        <span class='id identifier rubyid_total_gap'>total_gap</span> <span class='op'>=</span> <span class='id identifier rubyid_comp_gap'>comp_gap</span> <span class='op'>+</span> <span class='id identifier rubyid_gap'>gap</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_same'>same</span><span class='rbracket'>]</span>
+        <span class='kw'>break</span> <span class='kw'>if</span> <span class='id identifier rubyid_y0'>y0</span> <span class='op'>-</span> <span class='id identifier rubyid_total_gap'>total_gap</span> <span class='op'>&lt;</span> <span class='int'>0</span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>-</span> <span class='lparen'>(</span><span class='int'>10</span><span class='op'>**</span><span class='lparen'>(</span><span class='op'>-</span><span class='lparen'>(</span><span class='int'>9</span><span class='op'>+</span><span class='id identifier rubyid_change'>change</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+      <span class='id identifier rubyid_aa2'>aa2</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='op'>*</span><span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_comp_gap'>comp_gap</span> <span class='op'>+=</span> <span class='id identifier rubyid_gap'>gap</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_same'>same</span><span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span>
+      <span class='id identifier rubyid_a1_cal'>a1_cal</span> <span class='op'>=</span> <span class='id identifier rubyid_a0'>a0</span><span class='op'>+</span><span class='id identifier rubyid_comp_gap'>comp_gap</span>
+      <span class='id identifier rubyid_a2_cal'>a2_cal</span> <span class='op'>=</span> <span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span><span class='op'>*</span><span class='id identifier rubyid_a1_cal'>a1_cal</span>
+    <span class='kw'>end</span>
+    <span class='comment'>#ここから出力
+</span>    <span class='id identifier rubyid_a1_cal'>a1_cal</span> <span class='op'>=</span> <span class='id identifier rubyid_a1_cal'>a1_cal</span><span class='op'>*</span><span class='float'>1.0e8</span>
+    <span class='id identifier rubyid_a2_cal'>a2_cal</span> <span class='op'>=</span> <span class='id identifier rubyid_a2_cal'>a2_cal</span><span class='op'>*</span><span class='float'>1.0e8</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>T(K), a1, a2_cal(A), k, g=</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='id identifier rubyid_temp'>temp</span><span class='comma'>,</span> <span class='id identifier rubyid_a1_cal'>a1_cal</span><span class='comma'>,</span> <span class='id identifier rubyid_a2_cal'>a2_cal</span><span class='comma'>,</span> <span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>temp, u0, harmonic free, free=</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='id identifier rubyid_temp'>temp</span><span class='comma'>,</span> <span class='id identifier rubyid_u0'>u0</span><span class='comma'>,</span> <span class='id identifier rubyid_psi0'>psi0</span><span class='comma'>,</span> <span class='id identifier rubyid_psi_nonli'>psi_nonli</span><span class='rparen'>)</span>
+    <span class='comment'>#eVに単位変換
+</span>    <span class='id identifier rubyid_u0_ev'>u0_ev</span> <span class='op'>=</span> <span class='id identifier rubyid_ev_from_kelvin'>ev_from_kelvin</span><span class='lparen'>(</span><span class='id identifier rubyid_u0'>u0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_psi0_ev'>psi0_ev</span> <span class='op'>=</span> <span class='id identifier rubyid_ev_from_erg'>ev_from_erg</span><span class='lparen'>(</span><span class='id identifier rubyid_psi0'>psi0</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_psi_nonli_ev'>psi_nonli_ev</span> <span class='op'>=</span> <span class='id identifier rubyid_ev_from_erg'>ev_from_erg</span><span class='lparen'>(</span><span class='id identifier rubyid_psi_nonli'>psi_nonli</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_psi'>psi</span> <span class='op'>=</span> <span class='id identifier rubyid_u0_ev'>u0_ev</span> <span class='op'>+</span> <span class='id identifier rubyid_psi0_ev'>psi0_ev</span> <span class='op'>+</span> <span class='id identifier rubyid_psi_nonli_ev'>psi_nonli_ev</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>u0_ev, psi0_ev, psi_nonli_ev, psi, large_a</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='id identifier rubyid_u0_ev'>u0_ev</span><span class='comma'>,</span> <span class='id identifier rubyid_psi0_ev'>psi0_ev</span><span class='comma'>,</span> <span class='id identifier rubyid_psi_nonli_ev'>psi_nonli_ev</span><span class='comma'>,</span> <span class='id identifier rubyid_psi'>psi</span><span class='comma'>,</span> <span class='id identifier rubyid_large_a'>large_a</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_moment_vasp-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_moment_vasp</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_moment_vasp'>calc_moment_vasp</span>
+  <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>calc_moment_vasp</span><span class='tstring_end'>&quot;</span></span>
+  <span class='comment'>#それぞれの定数を再定義，もともとはergだがJにするために．
+</span>  <span class='ivar'>@boltz</span> <span class='op'>=</span> <span class='float'>1.38064852e-23</span>
+  <span class='ivar'>@planck</span> <span class='op'>=</span> <span class='float'>6.626e-34</span>
+  <span class='ivar'>@hbar</span> <span class='op'>=</span> <span class='ivar'>@planck</span><span class='op'>/</span><span class='lparen'>(</span><span class='float'>2.0</span><span class='op'>*</span><span class='const'>PI</span><span class='rparen'>)</span>
+  <span class='ivar'>@avogadro</span> <span class='op'>=</span> <span class='float'>6.023e23</span>
+
+  <span class='id identifier rubyid_a0'>a0</span> <span class='op'>=</span> <span class='float'>2.5713342796904244e-10</span><span class='comment'>#vasp Cu
+</span>  <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>a0</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='id identifier rubyid_a0'>a0</span><span class='rparen'>)</span>
+  <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='int'>1</span><span class='op'>..</span><span class='int'>10</span>
+    <span class='id identifier rubyid_temp'>temp</span> <span class='op'>=</span> <span class='int'>100</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_i'>i</span><span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_temp'>temp</span> <span class='op'>=</span> <span class='int'>10</span> <span class='kw'>if</span> <span class='id identifier rubyid_i'>i</span><span class='op'>==</span><span class='int'>1</span>
+    <span class='id identifier rubyid_theta'>theta</span> <span class='op'>=</span> <span class='ivar'>@boltz</span><span class='op'>*</span><span class='id identifier rubyid_temp'>temp</span>
+    <span class='id identifier rubyid_gap'>gap</span> <span class='op'>=</span> <span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='int'>6</span><span class='rparen'>)</span><span class='lbrace'>{</span> <span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='int'>201</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+    <span class='id identifier rubyid_aa1'>aa1</span><span class='comma'>,</span><span class='id identifier rubyid_aa2'>aa2</span><span class='op'>=</span><span class='lbracket'>[</span><span class='rbracket'>]</span><span class='comma'>,</span><span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='op'>=</span><span class='id identifier rubyid_a0'>a0</span>
+    <span class='id identifier rubyid_comp_gap'>comp_gap</span> <span class='op'>=</span> <span class='int'>0</span>
+    <span class='kw'>for</span> <span class='id identifier rubyid_change'>change</span> <span class='kw'>in</span> <span class='int'>1</span><span class='op'>..</span><span class='int'>5</span> <span class='comment'>#width to displace
+</span>      <span class='kw'>for</span> <span class='id identifier rubyid_same'>same</span> <span class='kw'>in</span> <span class='int'>1</span><span class='op'>..</span><span class='int'>900</span>
+        <span class='id identifier rubyid_gap'>gap</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_same'>same</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_same'>same</span><span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span><span class='op'>*</span><span class='lparen'>(</span><span class='int'>10</span><span class='op'>**</span><span class='lparen'>(</span><span class='op'>-</span><span class='lparen'>(</span><span class='int'>11</span><span class='op'>+</span><span class='id identifier rubyid_change'>change</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='comment'>#start 1e-12
+</span>        <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>+</span> <span class='id identifier rubyid_gap'>gap</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_same'>same</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_aa2'>aa2</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='op'>*</span><span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_a1'>a1</span><span class='comma'>,</span> <span class='id identifier rubyid_a2'>a2</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_aa2'>aa2</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_a1'>a1</span> <span class='op'>=</span> <span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='float'>1e10</span><span class='comment'>#angstromに
+</span>        <span class='comment'>#p &quot;k&quot;
+</span>        <span class='id identifier rubyid_k'>k</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='float'>192.3313091</span><span class='op'>-</span><span class='float'>69.33663132</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>+</span><span class='float'>135.4613676</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>-</span><span class='float'>2.5713342796904244</span><span class='rparen'>)</span><span class='op'>**</span><span class='int'>2</span><span class='op'>+</span><span class='float'>88.20445888</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='op'>-</span><span class='float'>2.5713342796904244</span><span class='rparen'>)</span><span class='op'>**</span><span class='int'>3</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_k'>k</span> <span class='op'>=</span> <span class='id identifier rubyid_k'>k</span><span class='op'>*</span><span class='float'>1.60218e-19</span><span class='comment'>#evからJに変換
+</span>        <span class='id identifier rubyid_atom_mass'>atom_mass</span> <span class='op'>=</span> <span class='float'>63.5460</span><span class='op'>/</span><span class='ivar'>@avogadro</span>
+        <span class='id identifier rubyid_omega'>omega</span> <span class='op'>=</span> <span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='op'>/</span><span class='id identifier rubyid_atom_mass'>atom_mass</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='ivar'>@hbar</span><span class='op'>*</span><span class='id identifier rubyid_omega'>omega</span><span class='op'>/</span><span class='lparen'>(</span><span class='float'>2.0</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span>
+        <span class='comment'>#p &quot;gamma&quot;
+</span>        <span class='id identifier rubyid_gamma'>gamma</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='op'>-</span><span class='float'>1089.896157</span><span class='op'>+</span><span class='float'>529.2267532</span><span class='op'>*</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span><span class='op'>/</span><span class='int'>6</span>
+        <span class='id identifier rubyid_gamma'>gamma</span> <span class='op'>=</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='op'>*</span><span class='float'>1.60218e-19</span><span class='comment'>#evからJに変換
+</span>        <span class='id identifier rubyid_gt_k2'>gt_k2</span> <span class='op'>=</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='op'>/</span><span class='id identifier rubyid_k'>k</span><span class='op'>**</span><span class='int'>2</span>
+        <span class='comment'>###################ここまでok
+</span>        <span class='comment'>#u0 = calc_u0(a1,a2)
+</span>        <span class='id identifier rubyid_psi0'>psi0</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_psi0'>calc_psi0</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_large_a'>large_a</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_large_a'>calc_large_a</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_gt_k2'>gt_k2</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_y0'>y0</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_y0'>calc_y0</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span> <span class='id identifier rubyid_theta'>theta</span><span class='comma'>,</span> <span class='id identifier rubyid_large_a'>large_a</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_psi_linear'>psi_linear</span> <span class='op'>=</span> <span class='id identifier rubyid_calc_psi_linear'>calc_psi_linear</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span> <span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span><span class='comment'>#とりあえず変数はそのままnonli
+</span>        <span class='id identifier rubyid_total_gap'>total_gap</span> <span class='op'>=</span> <span class='id identifier rubyid_comp_gap'>comp_gap</span> <span class='op'>+</span> <span class='id identifier rubyid_gap'>gap</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_same'>same</span><span class='rbracket'>]</span>
+        <span class='kw'>break</span> <span class='kw'>if</span> <span class='id identifier rubyid_y0'>y0</span> <span class='op'>-</span> <span class='id identifier rubyid_total_gap'>total_gap</span> <span class='op'>&lt;</span> <span class='int'>0</span>
+        <span class='id identifier rubyid_a1'>a1</span> <span class='op'>=</span> <span class='id identifier rubyid_a1'>a1</span><span class='op'>*</span><span class='float'>1e10</span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>-</span> <span class='lparen'>(</span><span class='int'>10</span><span class='op'>**</span><span class='lparen'>(</span><span class='op'>-</span><span class='lparen'>(</span><span class='int'>11</span><span class='op'>+</span><span class='id identifier rubyid_change'>change</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span>
+      <span class='id identifier rubyid_aa2'>aa2</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_aa1'>aa1</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='op'>*</span><span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span>
+      <span class='id identifier rubyid_comp_gap'>comp_gap</span> <span class='op'>+=</span> <span class='id identifier rubyid_gap'>gap</span><span class='lbracket'>[</span><span class='id identifier rubyid_change'>change</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_same'>same</span><span class='op'>-</span><span class='int'>1</span><span class='rbracket'>]</span>
+      <span class='id identifier rubyid_a1_cal'>a1_cal</span> <span class='op'>=</span> <span class='id identifier rubyid_a0'>a0</span><span class='op'>+</span><span class='id identifier rubyid_comp_gap'>comp_gap</span>
+      <span class='id identifier rubyid_a2_cal'>a2_cal</span> <span class='op'>=</span> <span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='int'>2</span><span class='rparen'>)</span><span class='op'>*</span><span class='id identifier rubyid_a1_cal'>a1_cal</span>
+    <span class='kw'>end</span>
+    <span class='id identifier rubyid_a1_cal'>a1_cal</span> <span class='op'>=</span> <span class='id identifier rubyid_a1_cal'>a1_cal</span><span class='op'>*</span><span class='float'>1.0e10</span>
+    <span class='id identifier rubyid_a2_cal'>a2_cal</span> <span class='op'>=</span> <span class='id identifier rubyid_a2_cal'>a2_cal</span><span class='op'>*</span><span class='float'>1.0e10</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>T(K), a1, a2_cal(A), k, g=</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='id identifier rubyid_temp'>temp</span><span class='comma'>,</span> <span class='id identifier rubyid_a1_cal'>a1_cal</span><span class='comma'>,</span> <span class='id identifier rubyid_a2_cal'>a2_cal</span><span class='comma'>,</span> <span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>temp, u0, harmonic free, free=</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='id identifier rubyid_temp'>temp</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>u0</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>psi0</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>psi_nonli</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\n</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_p'>p</span> <span class='id identifier rubyid_a1_cal'>a1_cal</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_psi0-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_psi0</strong>(x, theta) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+218
+219
+220
+221</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 218</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_psi0'>calc_psi0</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_arg0'>arg0</span> <span class='op'>=</span> <span class='float'>1.0</span> <span class='op'>-</span> <span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span><span class='op'>-</span><span class='float'>2.0</span><span class='op'>*</span><span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_psai0'>psai0</span> <span class='op'>=</span> <span class='float'>3.0</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='op'>+</span><span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='id identifier rubyid_arg0'>arg0</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_psi_linear-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_psi_linear</strong>(k, x, gamma, theta) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>追加で実装　論文(1988)p515</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+255
+256
+257
+258
+259
+260
+261
+262
+263</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 255</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_psi_linear'>calc_psi_linear</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span><span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span><span class='comment'>#追加で実装　論文(1988)p515
+</span>  <span class='id identifier rubyid_xcothx'>xcothx</span> <span class='op'>=</span> <span class='id identifier rubyid_x'>x</span><span class='op'>/</span><span class='id identifier rubyid_tanh'>tanh</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span>
+  <span class='comment'>#xcothx = x*(exp(x)+exp(-x))/(exp(x)-exp(-x))
+</span>  <span class='id identifier rubyid_fac1'>fac1</span> <span class='op'>=</span> <span class='float'>1.0</span> <span class='op'>+</span> <span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>/</span><span class='float'>2.0</span>
+  <span class='id identifier rubyid_fac2'>fac2</span> <span class='op'>=</span> <span class='float'>1.0</span> <span class='op'>+</span> <span class='id identifier rubyid_xcothx'>xcothx</span>
+  <span class='id identifier rubyid_term1'>term1</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='lparen'>(</span><span class='id identifier rubyid_gamma'>gamma</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='op'>**</span><span class='int'>2</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='float'>6.0</span><span class='op'>*</span><span class='id identifier rubyid_k'>k</span><span class='op'>**</span><span class='int'>2</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='op'>*</span><span class='id identifier rubyid_fac1'>fac1</span>
+  <span class='id identifier rubyid_term2'>term2</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='lparen'>(</span><span class='id identifier rubyid_gamma'>gamma</span><span class='op'>**</span><span class='int'>2</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='op'>**</span><span class='int'>3</span><span class='rparen'>)</span><span class='op'>/</span><span class='lparen'>(</span><span class='float'>4.0</span><span class='op'>*</span><span class='id identifier rubyid_k'>k</span><span class='op'>**</span><span class='int'>4</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='op'>*</span><span class='id identifier rubyid_fac1'>fac1</span><span class='op'>*</span><span class='id identifier rubyid_fac2'>fac2</span>
+  <span class='kw'>return</span> <span class='op'>-</span><span class='id identifier rubyid_term1'>term1</span><span class='op'>-</span><span class='id identifier rubyid_term2'>term2</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_psi_nonli-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_psi_nonli</strong>(k, x, gamma, theta) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 241</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_psi_nonli'>calc_psi_nonli</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span><span class='id identifier rubyid_theta'>theta</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_fac_gam'>fac_gam</span> <span class='op'>=</span> <span class='ivar'>@gamma1</span><span class='op'>*</span><span class='ivar'>@gamma1</span> <span class='op'>+</span> <span class='float'>2.0</span><span class='op'>*</span><span class='ivar'>@gamma1</span><span class='op'>*</span><span class='ivar'>@gamma2</span>
+  <span class='ivar'>@gamma1</span>
+  <span class='ivar'>@gamma2</span>
+  <span class='id identifier rubyid_xcothx'>xcothx</span> <span class='op'>=</span> <span class='id identifier rubyid_x'>x</span><span class='op'>/</span><span class='id identifier rubyid_tanh'>tanh</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='rparen'>)</span>
+  <span class='comment'>#xcothx = x*(exp(x)+exp(-x))/(exp(x)-exp(-x))
+</span>  <span class='id identifier rubyid_xcothx2'>xcothx2</span> <span class='op'>=</span> <span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>**</span><span class='int'>2</span>
+  <span class='id identifier rubyid_fac1'>fac1</span> <span class='op'>=</span> <span class='float'>1.0</span> <span class='op'>+</span> <span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>/</span><span class='float'>2.0</span>
+  <span class='id identifier rubyid_fac2'>fac2</span> <span class='op'>=</span> <span class='float'>1.0</span> <span class='op'>+</span> <span class='id identifier rubyid_xcothx'>xcothx</span>
+  <span class='id identifier rubyid_term1'>term1</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_theta'>theta</span><span class='op'>/</span><span class='id identifier rubyid_k'>k</span><span class='rparen'>)</span><span class='op'>**</span><span class='int'>2</span> <span class='op'>*</span> <span class='lparen'>(</span><span class='ivar'>@gamma2</span><span class='op'>*</span><span class='id identifier rubyid_xcothx2'>xcothx2</span> <span class='op'>-</span> <span class='float'>2.0</span><span class='op'>*</span><span class='ivar'>@gamma1</span><span class='op'>*</span><span class='id identifier rubyid_fac1'>fac1</span><span class='op'>/</span><span class='float'>3.0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_term2'>term2</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='float'>4.0</span><span class='op'>*</span><span class='ivar'>@gamma2</span><span class='op'>**</span><span class='int'>2</span> <span class='op'>/</span> <span class='float'>3.0</span><span class='rparen'>)</span><span class='op'>*</span><span class='id identifier rubyid_xcothx'>xcothx</span><span class='op'>*</span><span class='id identifier rubyid_fac1'>fac1</span><span class='op'>-</span><span class='float'>2.0</span><span class='op'>*</span><span class='id identifier rubyid_fac_gam'>fac_gam</span><span class='op'>*</span><span class='id identifier rubyid_fac1'>fac1</span><span class='op'>*</span><span class='id identifier rubyid_fac2'>fac2</span>
+  <span class='id identifier rubyid_term2'>term2</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='float'>2.0</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='op'>**</span><span class='int'>3</span><span class='op'>/</span><span class='id identifier rubyid_k'>k</span><span class='op'>**</span><span class='int'>4</span><span class='rparen'>)</span><span class='op'>*</span><span class='id identifier rubyid_term2'>term2</span>
+  <span class='kw'>return</span> <span class='float'>3.0</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_term1'>term1</span><span class='op'>+</span><span class='id identifier rubyid_term2'>term2</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_u0-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_u0</strong>(a1, a2) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+211
+212
+213
+214
+215
+216</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 211</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_u0'>calc_u0</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='comma'>,</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span>
+  <span class='comment'>#最近接１２，第２近接６はfccだから．．．POTCARにその情報を入れたほうがいいかも
+</span>  <span class='id identifier rubyid_z1'>z1</span><span class='op'>=</span><span class='int'>12</span>
+  <span class='id identifier rubyid_z2'>z2</span><span class='op'>=</span><span class='int'>6</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_u0'>u0</span> <span class='op'>=</span> <span class='float'>0.5</span><span class='op'>*</span><span class='lparen'>(</span><span class='id identifier rubyid_z1'>z1</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_energy'>energy</span><span class='lparen'>(</span><span class='id identifier rubyid_a1'>a1</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='id identifier rubyid_z2'>z2</span><span class='op'>*</span><span class='cvar'>@@potential</span><span class='period'>.</span><span class='id identifier rubyid_energy'>energy</span><span class='lparen'>(</span><span class='id identifier rubyid_a2'>a2</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="calc_y0-instance_method">
+  
+    - (<tt>Object</tt>) <strong>calc_y0</strong>(k, gamma, theta, large_a) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+237
+238
+239</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 237</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_calc_y0'>calc_y0</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span> <span class='id identifier rubyid_theta'>theta</span><span class='comma'>,</span> <span class='id identifier rubyid_large_a'>large_a</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span> <span class='float'>2.0</span><span class='op'>*</span><span class='id identifier rubyid_gamma'>gamma</span><span class='op'>*</span><span class='id identifier rubyid_theta'>theta</span><span class='op'>**</span><span class='int'>2</span><span class='op'>*</span><span class='id identifier rubyid_large_a'>large_a</span><span class='op'>/</span><span class='lparen'>(</span><span class='float'>3.0</span><span class='op'>*</span><span class='id identifier rubyid_k'>k</span><span class='op'>**</span><span class='int'>3</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="check-instance_method">
+  
+    - (<tt>Object</tt>) <strong>check</strong>(*val) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_val'>val</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_p'>p</span> <span class='id identifier rubyid_val'>val</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>, </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ev_from_erg-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ev_from_erg</strong>(a) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+269
+270
+271</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 269</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ev_from_erg'>ev_from_erg</span><span class='lparen'>(</span><span class='id identifier rubyid_a'>a</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_a'>a</span><span class='op'>*</span><span class='float'>6.2415064e11</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ev_from_kelvin-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ev_from_kelvin</strong>(a) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+265
+266
+267</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 265</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ev_from_kelvin'>ev_from_kelvin</span><span class='lparen'>(</span><span class='id identifier rubyid_a'>a</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_a'>a</span><span class='op'>*</span><span class='float'>8.617385e-05</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="select-instance_method">
+  
+    - (<tt>Object</tt>) <strong>select</strong>(file = &#39;POTCAR&#39;) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/MomentMethod/moment_method.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='id identifier rubyid_file'>file</span><span class='op'>=</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>POTCAR</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_src'>src</span> <span class='op'>=</span> <span class='const'>YAML</span><span class='period'>.</span><span class='id identifier rubyid_load_file'>load_file</span><span class='lparen'>(</span><span class='id identifier rubyid_file'>file</span><span class='rparen'>)</span>
+  <span class='cvar'>@@potential</span><span class='op'>=</span><span class='kw'>case</span> <span class='id identifier rubyid_src'>src</span><span class='lbracket'>[</span><span class='symbol'>:type</span><span class='rbracket'>]</span>
+  <span class='comment'>#ここの微分式POTCARのほうにいれたい．メソッドそのままPOTCARに入れるのもありかも．．
+</span>  <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>lj_jindo</span><span class='tstring_end'>&#39;</span></span>
+    <span class='const'>DiffLjJindo</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_src'>src</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_p'>p</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>*********************missed potcar*******************</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_exit'>exit</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
 
 </div>
 
     <div id="footer">
-  Generated on Mon Jun  6 16:48:41 2016 by
+  Generated on Mon Aug 22 02:51:51 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.0.0).
 </div>

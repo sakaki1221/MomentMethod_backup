@@ -93,6 +93,8 @@
     
   
     
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="DiffLjJindo.html" title="DiffLjJindo (class)">DiffLjJindo</a></span>, <span class='object_link'><a href="MomentPlot.html" title="MomentPlot (class)">MomentPlot</a></span>
+    
   
 </p>
 
@@ -271,7 +273,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Cu,Auで値一致，Agは負の平方根取るからだめ，fortranの方もNaNになってる.</p>
+</div></span>
   
 </li>
 
@@ -301,12 +305,12 @@
       <pre class="lines">
 
 
-16
-17
-18</pre>
+20
+21
+22</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moment.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'lib/moment_method.rb', line 20</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_check'>check</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_val'>val</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_p'>p</span> <span class='id identifier rubyid_val'>val</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>, </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
@@ -342,10 +346,6 @@
       <pre class="lines">
 
 
-25
-26
-27
-28
 29
 30
 31
@@ -357,10 +357,14 @@
 37
 38
 39
-40</pre>
+40
+41
+42
+43
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moment.rb', line 25</span>
+      <pre class="code"><span class="info file"># File 'lib/moment_method.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deriv'>deriv</span><span class='lparen'>(</span><span class='id identifier rubyid_rr'>rr</span><span class='rparen'>)</span> <span class='comment'>#動作確認済み
 </span>  <span class='id identifier rubyid_rh'>rh</span> <span class='op'>=</span> <span class='const'>R0</span><span class='op'>/</span><span class='id identifier rubyid_rr'>rr</span>
@@ -420,13 +424,13 @@
       <pre class="lines">
 
 
-20
-21
-22
-23</pre>
+24
+25
+26
+27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moment.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'lib/moment_method.rb', line 24</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_diff_sign?'>diff_sign?</span><span class='lparen'>(</span><span class='id identifier rubyid_n1'>n1</span><span class='comma'>,</span> <span class='id identifier rubyid_n2'>n2</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='kw'>true</span> <span class='kw'>if</span> <span class='id identifier rubyid_n1'>n1</span><span class='op'>*</span><span class='id identifier rubyid_n2'>n2</span> <span class='op'>&lt;</span> <span class='int'>0</span>
@@ -452,12 +456,12 @@
       <pre class="lines">
 
 
-12
-13
-14</pre>
+16
+17
+18</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moment.rb', line 12</span>
+      <pre class="code"><span class="info file"># File 'lib/moment_method.rb', line 16</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
   <span class='const'>Math</span><span class='op'>::</span><span class='id identifier rubyid_exp'>exp</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
@@ -482,12 +486,12 @@
       <pre class="lines">
 
 
-8
-9
-10</pre>
+12
+13
+14</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moment.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'lib/moment_method.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
   <span class='const'>Math</span><span class='op'>::</span><span class='id identifier rubyid_log'>log</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
@@ -506,18 +510,29 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Cu,Auで値一致，Agは負の平方根取るからだめ，fortranの方もNaNになってる</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-4
-5
-6</pre>
+8
+9
+10</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/moment.rb', line 4</span>
+      <pre class="code"><span class="info file"># File 'lib/moment_method.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
   <span class='const'>Math</span><span class='op'>::</span><span class='id identifier rubyid_sqrt'>sqrt</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
@@ -532,7 +547,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Jun  6 16:48:41 2016 by
+  Generated on Mon Aug 22 02:51:51 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.0.0).
 </div>
