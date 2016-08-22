@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "MomentMethod"
+require "moment_method"
 
 MomentMethod::Command.run(ARGV)
