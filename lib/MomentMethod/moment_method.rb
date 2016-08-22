@@ -1,8 +1,7 @@
 require 'yaml'
 include Math
 
-
-class MomentMethod
+class CalcMoment #名前MomentMethodは使われてる？
   #元の定数違う，多分間違い  BOLTZ = 1.380658e-16
   BOLTZ = 1.38064852e-16
   PLANCK = 6.626e-27
@@ -23,7 +22,8 @@ class MomentMethod
 
   def select(file='POTCAR')
     src = YAML.load_file(file)
-    @@potential=case src[:type]
+    #src = YAML.load_file(POTCAR)
+    p @@potential=case src[:type]
     #ここの微分式POTCARのほうにいれたい．メソッドそのままPOTCARに入れるのもありかも．．
     when 'lj_jindo'
       DiffLjJindo.new(src)
@@ -271,7 +271,7 @@ class MomentMethod
   end
 end
 
-class MomentPlot < MomentMethod
+class MomentPlot < CalcMoment
   def initialize(structure, range)
     puts "Hi,MomentPlot"
     @structure=structure

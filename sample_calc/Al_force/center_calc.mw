@@ -1,0 +1,12 @@
+#data:=[[0.24800000 ,-31.9994085],[0.24900000 ,-31.9994887],[0.25000000 ,-31.9995311],[0.25100000 ,-31.9995357],[0.25200000 ,-31.9995023]];
+file1:="./tmp.txt";
+data:=readdata(file1,2);
+with(LinearAlgebra):
+data2:=convert(Transpose(Matrix(data)),listlist);
+with(stats):
+eq1:=fit[leastsquare[[x, y], y = a0+a1*x+a2*x^2, {a0,a1,a2}]](data2);
+result:=-subs(x=data[3][1],diff(rhs(eq1),x))/8.0827999115/2.0; # for LJ
+#result:=-subs(x=data[3][1],diff(rhs(eq1),x))/8.0827999115; # for EAM
+file1:="./tmp1.txt";
+writedata(file1,[result]);
+

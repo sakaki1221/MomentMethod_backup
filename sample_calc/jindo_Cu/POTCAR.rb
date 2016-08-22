@@ -1,0 +1,3 @@
+class Jindotest
+
+end
